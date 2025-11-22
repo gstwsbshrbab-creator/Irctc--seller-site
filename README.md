@@ -272,3 +272,4 @@ By default, slips are stored in local `uploads/` and served by Express. For a mo
 - **WhatsApp**: Native `wa.me` links can only pre-fill text; image attachment **cannot** be auto-attached without WhatsApp Business API / paid third-party providers. User or admin must attach the slip image manually if needed.
 - **Storage**: Default is local `uploads/`. For production, strongly consider Cloudinary/Supabase/S3 as outlined above.
 - **Security**: Helmet, basic rate limiting, and server-side validation are enabled. Use HTTPS, strong `JWT_SECRET`, and locked-down MongoDB in production. CSRF protection is not enabled because auth uses Bearer tokens instead of cookies.
+
